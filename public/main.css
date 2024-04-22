@@ -153,20 +153,18 @@ a {
   transition: background-color 0.35s;
 }
 
-.activeNav {
-  background-color: grey;
+.rightMenuLi a:hover {
+  border-bottom: 2px solid;
+  text-decoration-style: solid 2px;
+  transition: .1s;
 }
 
 .activeNav a {
-  color: white;
+  color: black;
 }
 
 .rightMenuLi:hover {
-  background-color: grey;
-}
-
-.rightMenuLi:hover a {
-  color: white;
+  text-decoration: solid black;
 }
 
 /* ==============Hamburger
@@ -204,6 +202,24 @@ a {
 
 .hamburger span:nth-child(3) {
   transform: translate(30%, 28px);
+}
+
+.signIn{
+  padding: 5px 20px;
+  font-size: 1.8vw;
+  font-family: var(--popRegular);
+  border-radius: 5px;
+  border: none;
+  background-color: blue;
+}
+
+.signIn:hover {
+scale: 1.02;
+transition: .5s;
+}
+
+.signIn a{
+  color: white;
 }
 
 /* ================Introduction Section
@@ -281,6 +297,7 @@ a {
   position: absolute;
   right: 1%;
   bottom: 50%;
+  cursor: pointer;
 }
 
 .leftBooksSection h1 {
@@ -488,28 +505,28 @@ a {
   margin-top: 2vw;
 }
 
-.recommendations {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+.recommendations{
+  margin-top: 40px;
+}
+
+.filterBooks a{
+  color: black; 
+  font-size: 25px;
+}
+
+.booksCategoryCircle img{
+  object-fit: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+
+.rightBooksChoice{
+  display: flex;
+  align-items: center;
   gap: 20px;
-  margin-top: 20px;
-}
-
-.recommendations p {
-  font-size: 1vw;
-}
-
-.rightSideProdBtn {
-  padding: 5px 15px;
-  border-radius: 30px;
-  border: none;
-  background-color: rgb(224, 223, 223);
-  color: black;
-  font-family: var(--popRegular);
   margin-top: 5px;
-  cursor: pointer;
 }
-
 /* ======================== Pagination Section 
 ============================ */
 
@@ -784,6 +801,26 @@ textarea.contactInput {
 /* ======================== Max width 1366px ============================ */
 
 /* ======================== Max width 1280px ============================ */
+
+@media screen and (max-width: 1280px){
+
+  .rightSideBooksSection{
+    display: none;
+    width: 0%;
+  }
+
+  .motherBooksSection{
+    grid-template-columns: 1fr;
+  }
+
+  .leftBooksSection{
+    width: 100%;
+  }
+  
+  .rightSideContainer{
+    min-width: 90%;
+  }
+}
 
 /* ======================== Media Queries For Tablets Versions ============================ */
 

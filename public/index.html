@@ -35,6 +35,11 @@
             <li class="rightMenuLi">
               <a href="#contactSection">Contact</a>
             </li>
+            <li>
+              <button class="signIn">
+                <a href="./sign_In/login.html">Sign In</a>
+              </button>
+            </li>
           </ul>
           <div class="hamburger hamburgerClicked" onclick="hamburgerClicked()">
             <span></span>
@@ -71,6 +76,7 @@
               />
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+            <h4>Popular Books</h4>
             <div class="bookDetails">
               <div class="bookImageArea">
                 <img
@@ -295,30 +301,39 @@
             </div>
           </div>
           <div class="recommendations">
-            <div class="mostPopularBooks">
-              <h1 class="rightH6">Most Popular Books:</h1>
-              <button class="rightSideProdBtn">Rich Dad Poor Dad</button>
-            </div>
-            <div class="popularGenres">
-              <h1 class="rightH6">Popular Genres:</h1>
-              <button class="rightSideProdBtn">Self-help</button>
-              <button class="rightSideProdBtn">Personal Development</button>
-              <button class="rightSideProdBtn">Business & Economics</button>
-            </div>
-            <div class="recentUploads">
-              <h1 class="rightH6">Recent Uploads</h1>
-              <button class="rightSideProdBtn">
-                Inner-Engineering: A yogi's guide to joy
-              </button>
-              <button class="rightSideProdBtn">
-                How successful people think
-              </button>
-            </div>
-            <div class="upcomingBooks">
-              <h1 class="rightH6">Upcoming Books</h1>
-              <button class="rightSideProdBtn">
-                Autobiography of Elon Musk
-              </button>
+            <div class="filterBooks">
+              <div class="popBooks rightBooksChoice">
+                <div class="booksCategoryCircle"><img src="../images/orange.jpg" alt=""></div>
+                <a href="#">Most Popular Books</a>
+              </div>
+              <div class="popularGenres rightBooksChoice">
+                <div class="booksCategoryCircle"><img src="../images/orange.jpg" alt=""></div>
+                <a href="#">Popular Genres</a>
+              </div>
+              <div class="recentUploads rightBooksChoice">
+                <div class="booksCategoryCircle"><img src="../images/orange.jpg" alt=""></div>
+                <a href="#">Recent Uploads</a>
+              </div>
+              <div class="upcomingBooks rightBooksChoice">
+                <div class="booksCategoryCircle"><img src="../images/orange.jpg" alt=""></div>
+                <a href="#">Upcoming Books</a>
+              </div>
+              <div class="selfImpBooks rightBooksChoice">
+                <div class="booksCategoryCircle"><img src="../images/orange.jpg" alt=""></div>
+                <a href="#">Self-improvement</a>
+              </div>
+              <div class="timeManagBooks rightBooksChoice">
+                <div class="booksCategoryCircle"><img src="../images/orange.jpg" alt=""></div>
+                <a href="#">Time Management</a>
+              </div>
+              <div class="healthFitBooks rightBooksChoice">
+                <div class="booksCategoryCircle"><img src="../images/orange.jpg" alt=""></div>
+                <a href="#">Health & Fitness</a>
+              </div>
+              <div class="parentingBooks rightBooksChoice">
+                <div class="booksCategoryCircle"><img src="../images/orange.jpg" alt=""></div>
+                <a href="#">Parenting</a>
+              </div>
             </div>
           </div>
         </div>
@@ -489,7 +504,6 @@
         <a href="#" style="color: blue">Privacy Policy</a>
       </div>
     </div>
-
     <!-- Font Awesome -->
     <script
       src="https://kit.fontawesome.com/7482f16e1e.js"
