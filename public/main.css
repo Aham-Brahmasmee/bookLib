@@ -813,7 +813,7 @@ textarea.contactInput {
 /* ======================== Max width 1280px ============================ */
 
 @media screen and (max-width: 1280px) {
-  
+
   .rightSideContainer {
     display: none;
     max-width: 40%;
@@ -890,7 +890,6 @@ textarea.contactInput {
     font-size: 20px;
   }
 
-
 }
 
 /* ======================== Media Queries For Tablets Versions ============================ */
@@ -900,6 +899,9 @@ textarea.contactInput {
 /* ======================== Max width 992px ============================ */
 
 @media screen and (max-width: 992px) {
+
+
+
   .rightMenuUl {
     display: none;
   }
@@ -965,18 +967,27 @@ textarea.contactInput {
 /* ======================== Max width 768px ============================ */
 
 @media screen and (max-width: 768px) {
+
+  .introSection h1{
+    font-size: 6vw;
+  }
+  
+.introSection p {
+  font-size: 2.5vw;
+}
+
   .bookImageArea img {
-    min-height: 16vw;
+    min-height: 12vw;
     min-width: 7vw;
   }
 
   .fa-star,
   .fa-star-half-stroke {
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
 
   .ratingsCount {
-    font-size: 20px;
+    font-size: 13px;
   }
 
   .previewIt {
@@ -984,7 +995,7 @@ textarea.contactInput {
   }
 
   .bookAndAuthorName p {
-    font-size: 3vw;
+    font-size: 2vw;
   }
 
   .filterBooks a{
@@ -996,8 +1007,16 @@ textarea.contactInput {
 
 @media screen and (max-width: 586px) {
 
+  .introSection h1{
+    font-size: 9vw;
+  }
+  
+.introSection p {
+  font-size: 3vw;
+}
+
   .bookImageArea img {
-    min-height: 20vw;
+    min-height: 13vw;
     min-width: 7vw;
   }
 
@@ -1007,15 +1026,53 @@ textarea.contactInput {
   }
 
   .ratingsCount {
-    font-size: 3vw;
+    font-size: 1.9vw;
   }
 
   .previewIt {
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .bookAndAuthorName p {
-    font-size: 2.5;
+    font-size: 2;
   }
 
+}
+
+
+
+/* ======================== Max width 586px ============================ */
+
+@media screen and (max-width: 393px) {
+
+  .bookImageArea img {
+    min-height: 18vw;
+    min-width: 10vw;
+  }
+
+  .fa-star,
+  .fa-star-half-stroke {
+    font-size: 2vw;
+  }
+
+  .ratingsCount {
+    font-size: 2.5vw;
+  }
+
+  .previewIt {
+    font-size: 11px;
+  }
+
+  .bookAndAuthorName p {
+    font-size: 2.5vw;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+
+  .filterBooks a{
+    font-size: 12px;
+  }
 }
