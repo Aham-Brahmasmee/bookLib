@@ -156,7 +156,7 @@ a {
 .rightMenuLi a:hover {
   border-bottom: 2px solid;
   text-decoration-style: solid 2px;
-  transition: .1s;
+  transition: 0.1s;
 }
 
 .activeNav a {
@@ -197,14 +197,14 @@ a {
 }
 
 .hamburger span:nth-child(2) {
-  transform: translate(30%,18px);
+  transform: translate(30%, 18px);
 }
 
 .hamburger span:nth-child(3) {
   transform: translate(30%, 28px);
 }
 
-.signIn{
+.signIn {
   padding: 5px 20px;
   font-size: 1.8vw;
   font-family: var(--popRegular);
@@ -214,11 +214,11 @@ a {
 }
 
 .signIn:hover {
-scale: 1.02;
-transition: .5s;
+  scale: 1.02;
+  transition: 0.5s;
 }
 
-.signIn a{
+.signIn a {
   color: white;
 }
 
@@ -498,35 +498,45 @@ transition: .5s;
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
-  margin-top: 2vw;
+  margin-top: 1vw;
 }
 
 .planDesciption {
   margin-top: 2vw;
 }
 
-.recommendations{
+.recommendations {
   margin-top: 40px;
+  display: flex;
+  justify-content: center;
 }
 
-.filterBooks a{
-  color: black; 
-  font-size: 25px;
+.filterBooks a {
+  color: black;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
-.booksCategoryCircle img{
+.filterBooks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.booksCategoryCircle img {
   object-fit: cover;
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 
-.rightBooksChoice{
+.rightBooksChoice {
   display: flex;
   align-items: center;
-  gap: 20px;
-  margin-top: 5px;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
+
 /* ======================== Pagination Section 
 ============================ */
 
@@ -802,23 +812,37 @@ textarea.contactInput {
 
 /* ======================== Max width 1280px ============================ */
 
-@media screen and (max-width: 1280px){
-
-  .rightSideBooksSection{
-    display: none;
-    width: 0%;
+@media screen and (max-width: 1280px) {
+  .rightSideContainer {
+    max-width: 40%;
   }
 
-  .motherBooksSection{
+  .motherBooksSection {
     grid-template-columns: 1fr;
   }
 
-  .leftBooksSection{
+  .rightSideBooksSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .leftBooksSection {
     width: 100%;
   }
-  
-  .rightSideContainer{
-    min-width: 90%;
+
+  .filterBooks {
+    gap: 2vw;
+    margin-left: 2vw;
+    margin-top: 0;
+    min-height: 100%;
+  }
+
+  .filterBooksCol3,
+  .filterBooksCol4 {
+    display: none;
+  }
+  .rightBooksChoice{
+    margin-bottom: 20px;
   }
 }
 
