@@ -1,19 +1,11 @@
 const express = require('express');
 const app = express();
-const path = require('path');
+const port = 3000;
 
-const hbs = require('hbs');
+// Define routes
+app.use(express.static('public'));
 
-const templatePath = path.join(_dirname, '../templates')
-
-app.use(express.json())
-app.set("view engine", "hbs");
-app.set("views", templatePath)
-
-
-app.get("/", (req, res)=>{
-    res.render("login")
-})
-app.listen(3000, ()=>{
-    console.log("Port Connected")
-})
+// Start server
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});

@@ -813,7 +813,9 @@ textarea.contactInput {
 /* ======================== Max width 1280px ============================ */
 
 @media screen and (max-width: 1280px) {
+  
   .rightSideContainer {
+    display: none;
     max-width: 40%;
   }
 
@@ -831,26 +833,69 @@ textarea.contactInput {
   }
 
   .filterBooks {
-    gap: 2vw;
+    gap: 4vw;
     margin-left: 2vw;
     margin-top: 0;
     min-height: 100%;
+  }
+
+  .filterBooks a {
+    font-size: 30px;
   }
 
   .filterBooksCol3,
   .filterBooksCol4 {
     display: none;
   }
-  .rightBooksChoice{
+  .rightBooksChoice {
     margin-bottom: 20px;
   }
+
+  /* ==================Left + Right side Books Section================== */
+
+  .motherBooksSection {
+    width: 100%;
+  }
+
+  /* ==============Left Side Book Section================= */
+
+  .bookSearch {
+    font-size: 23px;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 25px;
+    bottom: 45%;
+  }
+
+  .bookImageArea img {
+    max-height: 11vw;
+    min-width: 5vw;
+  }
+
+  .fa-star,
+  .fa-star-half-stroke {
+    font-size: 1vw;
+  }
+
+  .ratingsCount {
+    font-size: 15px;
+  }
+
+  .previewIt {
+    font-size: 1.4vw;
+  }
+
+  .bookAndAuthorName p {
+    font-size: 20px;
+  }
+
+
 }
 
 /* ======================== Media Queries For Tablets Versions ============================ */
 
-/* ======================== Max width 586px ============================ */
 
-/* ======================== Max width 768px ============================ */
 
 /* ======================== Max width 992px ============================ */
 
@@ -862,16 +907,115 @@ textarea.contactInput {
   .hamburger {
     display: block;
   }
+  .rightSideContainer {
+    display: none;
+  }
+
+  .bookSearch {
+    font-size: 20px;
+  }
+
+  .fa-magnifying-glass {
+    font-size: 23px;
+  }
+
+  .bookImageArea img {
+    max-height: 12vw;
+    min-width: 7vw;
+  }
+
+  .fa-star,
+  .fa-star-half-stroke {
+    font-size: 1.5vw;
+  }
+
+  .ratingsCount {
+    font-size: 15px;
+  }
+
+  .previewIt {
+    font-size: 1.5vw;
+  }
+
+  .bookAndAuthorName p {
+    font-size: 2vw;
+  }
+
+  .filterBooks a{
+    font-size: 25px;
+  }
+  .readerFeedbacks h1{
+    font-size: 30px;
+  }
+  
+  .readerFeedbacks p{
+    font-size: 12px;
+  }
+  
+  .mySwiper{
+    height: 350px;
+    width: 100%;
+  }
+
+  .mySwiper img{
+    height: 30px;
+    width: 30px;
+  }
+}
+/* ======================== Max width 768px ============================ */
+
+@media screen and (max-width: 768px) {
+  .bookImageArea img {
+    min-height: 16vw;
+    min-width: 7vw;
+  }
+
+  .fa-star,
+  .fa-star-half-stroke {
+    font-size: 2vw;
+  }
+
+  .ratingsCount {
+    font-size: 20px;
+  }
+
+  .previewIt {
+    font-size: 2vw;
+  }
+
+  .bookAndAuthorName p {
+    font-size: 3vw;
+  }
+
+  .filterBooks a{
+    font-size: 15px;
+  }
 }
 
-/* ======================== Media Queries For Mobile Versions ============================ */
+/* ======================== Max width 586px ============================ */
 
-/* ======================== Max width 414px ============================ */
+@media screen and (max-width: 586px) {
 
-/* ======================== Max width 412px ============================ */
+  .bookImageArea img {
+    min-height: 20vw;
+    min-width: 7vw;
+  }
 
-/* ======================== Max width 393px ============================ */
+  .fa-star,
+  .fa-star-half-stroke {
+    font-size: 2vw;
+  }
 
-/* ======================== Max width 390px ============================ */
+  .ratingsCount {
+    font-size: 3vw;
+  }
 
-/* ======================== Max width 360px ============================ */
+  .previewIt {
+    font-size: 13px;
+  }
+
+  .bookAndAuthorName p {
+    font-size: 2.5;
+  }
+
+}
