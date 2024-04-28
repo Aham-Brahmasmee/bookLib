@@ -271,7 +271,7 @@ a {
 .bookSearch {
   width: 100%;
   max-width: 650px;
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 7px;
   line-height: 2;
   border: none;
@@ -314,8 +314,8 @@ a {
 }
 
 .bookImageArea img {
-  max-height: 7.8vw;
-  min-width: 6vw;
+  max-height: 7vw;
+  min-width: 5vw;
   border: 1px solid black;
 }
 
@@ -357,7 +357,7 @@ a {
 }
 
 .previewIt {
-  padding: 0.5vw 0.5vw;
+  padding: 0.3vw 0.3vw;
   border-radius: 2px;
   border: none;
   background-color: rgb(238, 238, 238);
@@ -613,7 +613,7 @@ a {
 .swiper-slide img {
   display: block;
   width: 10%;
-  height: 20%;
+  height: 25%;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -676,6 +676,7 @@ a {
 .contactSection {
   height: fit-content;
   position: relative;
+  margin-top: 10px;
 }
 
 .contactForm {
@@ -693,7 +694,7 @@ a {
   right: 0;
   left: 50%;
   height: 10px;
-  width: 15%;
+  width: 9%;
   border: solid 4px #ffb400;
   border-color: #ffb400 transparent transparent transparent;
   border-radius: 30%;
@@ -701,7 +702,7 @@ a {
 
 .contactHeading {
   text-align: center;
-  font-size: 4vw;
+  font-size: 3vw;
 }
 
 .formArea {
@@ -729,7 +730,7 @@ textarea.contactInput {
   border: none;
   outline: none;
   padding: 5px;
-  font-size: 20px;
+  font-size: 15px;
   resize: none;
 }
 
