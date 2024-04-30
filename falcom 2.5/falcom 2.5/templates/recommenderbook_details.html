@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Details</title>
+</head>
+<body style="background-color: green;"> <!-- Apply background color to the body -->
+    <img src="{{ book_details['Image_URL'] }}" alt="Book Cover" style="width: 300px; height: 400px;">
+    <h1>Book Details</h1>
+    <h2>{{ book_details['Title'] }}</h2>
+    <p><strong>Categories:</strong> {{ book_details['Categories'] }}</p>
+    <p><strong>Author:</strong> {{ book_details['Author'] }}</p>
+    <p><strong>Description:</strong> {{ book_details['Description'] }}</p>
+</body>
+</html>

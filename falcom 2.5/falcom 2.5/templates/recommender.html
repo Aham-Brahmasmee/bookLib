@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Book Recommendations</title>
+    <style>
+        /* Style to display books in a grid */
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+            background-color: rgb(255, 255, 255); /* Green background for book container */
+            padding: 20px; /* Add padding */
+        }
+        .book-item {
+            width: 23%;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .book-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        /* Style for search form */
+        #search-form {
+            background-color: rgb(255, 255, 255); /* Green background */
+            padding: 10px; /* Add padding */
+        }
+        #book_title {
+            width: 400px; /* Larger input field */
+            padding: 10px; /* Add padding */
+            background-color: white; /* White background for search bar */
+        }
+        #submit-btn {
+            background-color: blue; /* Yellow submit button */
+            color: rgb(255, 255, 255); /* Text color */
+            padding: 10px 20px; /* Add padding */
+            border: none; /* Remove border */
+            cursor: pointer; /* Add cursor pointer */
+        }
+        body {
+            background-color: rgb(255, 255, 255); /* Green background for the body */
+            justify-content: center;
+            text-align: center;
+        }
+
+        form{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Book Recommendations</h1>
+    {% if error %}
+        <p>Error: {{ error }}</p>
+    {% endif %}
+    <form id="search-form" method="post" action="/recommendations">
+        <input type="text" id="book_title" name="book_title" placeholder="Search books and authors"><br>
+        <input id="submit-btn" type="submit" value="Get Recommendations">
+    </form>
+    {% if recommendations %}
+        <h2>Recommendations:</h2>
+        <div class="book-container">
+            {% for recommendation in recommendations %}
+                <div class="book-item">
+                    <h3>{{ recommendation['Title'] }}</h3>
+                    <p><strong>Categories:</strong> {{ recommendation['Categories'] }}</p>
+                    <img src="{{ recommendation['Image_URL'] }}" alt="Book Cover">
+                    <form method="get" action="/book_details">
+                        <input type="hidden" name="book_title" value="{{ recommendation['Title'] }}">
+                        <input type="submit" value="See More">
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+    {% endif %}
+</body>
+</html>
